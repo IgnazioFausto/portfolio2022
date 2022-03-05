@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Smooch+Sans:wght@500&display=swap');
+
+
+.contenedor {
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.titulo {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-top: 0rem;
+  color: #f88e84;
+  font-size: calc(1.2rem * 4.8);
+  font-family: "Smooch Sans", sans-serif;
+}
+.texto {
+  display: block;
+  position: relative;
+  font-size: calc(1.2rem * 1.2);
+  text-align: justify;
+  padding-top: 0rem;
+  width: 50%;
+  margin: 0 auto;
+  color: #000000da;
+  font-weight: 400;
+  font-family: "Noto Sans", sans-serif;
+  text-indent: 3rem;
+}
+.img {
+  width: 300px;
+  margin-top: 6rem;
+  border-radius: 500px;
+}
+.row {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 5rem;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.grupoLista {
+  background-color: whitesmoke;
+  width: 500px;
+  margin: 2rem auto;
+  border-left: 1px solid #f88e84;
+}
+.itemsLista {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  border-right: 0;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 10px, rgba(0, 0, 0, 0.22) 0px 1px 1px;
+}
+.icons {
+  color: #f88e84;
+  width: 5rem;
+  margin: 2.5rem;
+  font-size: 5rem;
+  transition-duration: 0.5s;
+}
+.icons:hover {
+  color: rgba(33, 65, 112, 0.9);
+}

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Smooch+Sans:wght@500&display=swap');
+
+
+.contenedor {
+  width: 100vh;
+  height: auto;
+  background-color: white;
+  display: block;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+.img {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10rem;
+  padding-top: 2rem;
+}
+.titulo {
+  display: block;
+  position: relative;
+  font-size: calc(1.2rem * 4.8);
+  text-align: center;
+  margin-top: 4rem;
+  color: #f88e84;
+  font-family: "Smooch Sans", sans-serif;
+}
+.btnCopy {
+  color: whitesmoke;
+  background-color: #f88e84;
+  border: 0;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+  margin: 0 0.2rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 5px 12px;
+}
+.btnCopy:hover {
+  background-color: rgba(33, 65, 112, 0.9);
+}
+.btnCopy a {
+  color: whitesmoke;
+  background-color: transparent;
+  border: 0;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+  text-decoration: none;
+}
+.btnCopy a:hover {
+  color: whitesmoke;
+}
+.tituloItem {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2rem;
+  color: black;
+  margin: 0;
+}
+.textoItem {
+  font-family: 'Noto Sans', sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: rgba(33, 65, 112, 0.9);
+  font-weight: 700;
+}
+.row {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 5rem;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.btnRepos {
+  color: whitesmoke;
+  background-color: rgba(33, 65, 112, 0.9);
+  border: 0;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 5px 12px;
+}
+.btnRepos:hover {
+  background-color: #f88e84;
+}
+.btnRepos a {
+  color: whitesmoke;
+  background-color: transparent;
+  border: 0;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 6px;
+  padding: 0.1rem 0.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.btnRepos a:hover {
+  color: whitesmoke;
+}
+.icon {
+  font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+  margin-top: -.5rem;
+}
+.icons {
+  color: #f88e84;
+  width: 4rem;
+  margin: 1rem;
+  font-size: 4rem;
+  transition-duration: 0.5s;
+}
+.icons:hover {
+  color: rgba(33, 65, 112, 0.9);
+}
+.badge {
+  color: rgba(33, 65, 112, 0.9);
+  background-color: rgba(245, 245, 245, 0.144);
+  height: auto;
+  line-height: .8rem;
+  margin-left: 0rem;
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 900;
+  box-shadow: rgba(98, 98, 98, 0.3) 0px 9px 38px, rgba(0, 0, 0, 0.22) 0px 5px 12px;
+}

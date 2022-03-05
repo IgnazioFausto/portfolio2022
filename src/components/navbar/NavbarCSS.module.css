@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;500&display=swap");
+
+nav.navbar {
+  width: 100%;
+  height: 4rem;
+  margin: 0 auto;
+  display: flex;
+  position: fixed;
+  background-color: rgba(33, 65, 112, 0.9);
+  justify-content: space-around;
+  z-index: 3;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 38px, rgba(0, 0, 0, 0.22) 0px 1px 1px;
+}
+nav.navbar-expand {
+  justify-content: space-around;
+}
+.brand {
+  font-size: calc(1.2rem * 2.4);
+  color: whitesmoke;
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 800;
+  line-height: 1.8rem;
+  text-decoration: none;
+  margin: auto 0;
+  text-decoration: underline;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 9px 38px, rgba(0, 0, 0, 0.22) 0px 5px 12px;
+}
+.brand:hover {
+  color: #cab1a9;
+}
+.navLink {
+  font-size: 2rem;
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 500;
+  margin: 0 1.2rem;
+  color: #cab1a9;
+  text-decoration: none;
+}
+.navLink:hover {
+  color: whitesmoke;
+}
+.activeLink {
+  font-size: 2rem;
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 500;
+  margin: 0 1.2rem;
+  color: #f88e84;
+  text-decoration: none;
+}
+.navbar-nav a:hover {
+  color: whitesmoke;
+}
+
+a.activeLink:hover {
+  color: whitesmoke;
+}
+
+.badge {
+  color: rgba(33, 65, 112, 0.9);
+  background-color: rgba(245, 245, 245, 0.144);
+  height: auto;
+  line-height: .8rem;
+  margin-left: .8rem;
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 100;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 9px 38px, rgba(0, 0, 0, 0.22) 0px 5px 12px;
+}
