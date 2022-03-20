@@ -12,7 +12,7 @@ import {
 
 function Portfolio() {
   return (
-    <Container className={PortfolioCSS.contenedor}>
+    <Container fluid className={PortfolioCSS.contenedor}>
       <Row className={PortfolioCSS.row}>
         <Col>
           <h3 className={PortfolioCSS.titulo}>Sobre este portfolio</h3>

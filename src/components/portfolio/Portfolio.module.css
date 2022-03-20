@@ -2,11 +2,13 @@
 
 
 .contenedor {
-  height: 100vh;
+  height: auto;
   width: 100%;
   justify-content: center;
   margin: 0 auto;
   text-align: center;
+  background-color: rgba(33, 65, 112, 0.9);
+
 }
 .titulo {
   display: block;

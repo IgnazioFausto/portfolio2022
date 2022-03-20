@@ -18,9 +18,9 @@
   font-size: calc(1.2rem * 1.4);
   text-align: justify;
   padding-top: 0rem;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
-  color: #000000da;
+  color: #fff;
   font-weight: 500;
   font-family: 'Noto Sans', sans-serif;
   text-indent: 3rem;
@@ -42,10 +42,12 @@
   width: 100%;
 }
 .contenedor {
-  height: 100%;
+  height: auto;
+  min-height: 100vh;
   width: 100%;
   justify-content: center;
   margin: 0 auto;
   text-align: center;
+  background-color: rgba(33, 65, 112, 0.9);
 }
 

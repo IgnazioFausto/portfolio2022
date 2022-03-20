@@ -64,7 +64,7 @@ function Nosotros() {
               src={HuertitaImg}
               alt="Second slide"
             />
-            <Carousel.Caption>
+            <Carousel.Caption className={WorksCSS.items}>
               <h5 className={WorksCSS.tituloItem}>Mi Huertapp</h5>
               <p className={WorksCSS.textoItem}>
                 Proyecto E-commerce en React, con BBDD en Firebase.
@@ -91,7 +91,7 @@ function Nosotros() {
           </Carousel.Item>
         </Carousel>
       </div>
-      <Container>
+      <Container fluid className={WorksCSS.contenedorPequeño}>
         <Row>
           <Col className={WorksCSS.row}>
             <button className={WorksCSS.btnRepos}>
@@ -108,11 +108,11 @@ function Nosotros() {
           </Col>
         </Row>
       </Container>
-      <div className={WorksCSS.contenedor}>
+      <div className={WorksCSS.contenedorPequeño}>
         <Row className={WorksCSS.row}>
           <h2>
             Aprendido{" "}
-            <Badge className={WorksCSS.badge} pill bg="" text="dark">
+            <Badge className={WorksCSS.badge} pill bg="dark" text="dark">
               {" "}
               (en constante práctica y mejora){" "}
             </Badge>
@@ -132,7 +132,7 @@ function Nosotros() {
           </Col>
         </Row>
       </div>
-      <div className={WorksCSS.contenedor}>
+      <div className={WorksCSS.contenedorPequeño}>
         <Row className={WorksCSS.row}>
           <h2>Aprendiendo </h2>
           <Col>

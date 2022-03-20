@@ -6,7 +6,7 @@ import imgPerfil from "../../../../img/nachoperfilcv.png";
 function Inicio() {
   return (
     <>
-      <Container className={SobreMiCSS.contenedor}>
+      <Container fluid className={SobreMiCSS.contenedor}>
         <Row className={SobreMiCSS.row}>
           <h3 className={SobreMiCSS.titulo}>Sobre mi</h3>
           <Col>
@@ -25,7 +25,7 @@ function Inicio() {
               Sinceramente, nunca pensé dedicarme a una profesion como ésta,
               pero ahora que transito el camino -y en cada paso- siento que
               planear, desarrollar e idear soluciones digitales
-              <i>es, sin dudas, lo mío.</i>
+              <i> es, sin dudas, lo mío.</i>
             </p>
           </Col>
         </Row>

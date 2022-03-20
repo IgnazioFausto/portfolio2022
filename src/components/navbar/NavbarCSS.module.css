@@ -6,7 +6,7 @@ nav.navbar {
   margin: 0 auto;
   display: flex;
   position: fixed;
-  background-color: rgba(33, 65, 112, 0.9);
+  background-color: rgba(33, 65, 112, 0.4);
   justify-content: space-around;
   z-index: 3;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 38px, rgba(0, 0, 0, 0.22) 0px 1px 1px;
