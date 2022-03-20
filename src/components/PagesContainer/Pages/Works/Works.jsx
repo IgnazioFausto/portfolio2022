@@ -112,7 +112,7 @@ function Nosotros() {
         <Row className={WorksCSS.row}>
           <h2>
             Aprendido{" "}
-            <Badge className={WorksCSS.badge} pill bg="" text="">
+            <Badge className={WorksCSS.badge} pill bg="" text="dark">
               {" "}
               (en constante práctica y mejora){" "}
             </Badge>
