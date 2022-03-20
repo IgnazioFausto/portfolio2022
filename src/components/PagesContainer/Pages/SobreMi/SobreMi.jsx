@@ -1,5 +1,5 @@
 import React from "react";
-import SobreMiCSS from "./SobreMi.module.css";
+import SobreMiCSS from "./SobreMi.module.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import imgPerfil from "../../../../img/nachoperfilcv.png";
 

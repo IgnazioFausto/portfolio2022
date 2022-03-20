@@ -1,5 +1,5 @@
 import React from "react";
-import PortfolioCSS from "./Portfolio.module.css";
+import PortfolioCSS from "./Portfolio.module.scss";
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
 import {
   SiVisualstudiocode,

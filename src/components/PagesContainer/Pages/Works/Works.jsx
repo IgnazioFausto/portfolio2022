@@ -1,5 +1,5 @@
 import React from "react";
-import WorksCSS from "./Works.module.css";
+import WorksCSS from "./Works.module.scss";
 import { Carousel, Col, Container, Row, Badge } from "react-bootstrap";
 import TeknoImg from "../../../../img/gif teknotech.gif";
 import HuertitaImg from "../../../../img/Mi Huertapp.gif";

@@ -1,4 +1,4 @@
-import FooterCSS from "./Footer.module.css";
+import FooterCSS from "./Footer.module.scss";
 import { Container } from "react-bootstrap";
 import { GiChicken } from "react-icons/gi";
 

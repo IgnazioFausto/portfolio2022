@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ContactoCSS from "./Contacto.module.css";
+import ContactoCSS from "./Contacto.module.scss";
 import { Container, Row, Col } from "react-bootstrap";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 

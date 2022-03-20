@@ -1,5 +1,5 @@
 import { Nav, Navbar, Badge } from "react-bootstrap";
-import NavbarCSS from "./NavbarCSS.module.css";
+import NavbarCSS from "./NavbarCSS.module.scss";
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
