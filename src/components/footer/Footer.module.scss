@@ -1,16 +1,17 @@
+@import '../../utils/colors.module.scss';
 @import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;500&display=swap");
 
 .container {
   width: 100%;
   height: 1rem;
-  background-color: rgba(33, 65, 112, 0.9);
+  background-color: $secundarioDark;
   display: inline;
   position: absolute;
   margin: 0rem auto;
   padding-top: 5rem;
 }
 .container p {
-  color: #214170;
+  color: $secundario;
   text-align: center;
   font-size: 1.4rem;
   margin-bottom:0;
@@ -18,10 +19,10 @@
   font-weight: 900;
 }
 .icon {
-  color: #214170;
+  color: $acentoRed;
   font-size: 1.5rem;
   margin-top: -0.7rem;
 }
 .icon:hover {
-  color: #f88e84;
+  color: $acento;
 }

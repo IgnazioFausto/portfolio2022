@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.module.css";
+import "./App.module.scss";
 import Footer from "./components/footer/Footer";
 import SobreMi from "./components/PagesContainer/Pages/SobreMi/SobreMi";
 import Works from "./components/PagesContainer/Pages/Works/Works";
