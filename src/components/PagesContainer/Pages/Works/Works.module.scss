@@ -1,4 +1,5 @@
 @import '../../../../utils/colors.module.scss';
+@import '../../../../utils/fonts.module.scss';
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Smooch+Sans:wght@500&display=swap");
 
 .contenedor {
@@ -8,18 +9,19 @@
   display: block;
   margin: 0 auto;
   padding-top: 1rem;
-  background-color: rgba(33, 65, 112, 0.9);
+  background-color:$secundarioDark;
 }
 .contenedorPequeño {
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
-  padding-top: 1rem;
-  background-color: rgba(33, 65, 112, 0.9);
+  padding: 1rem 30%;
+  background-color: $secundarioDark;
 }
 .img {
   width: 50%;
+  max-width: 80em;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -28,8 +30,9 @@
   padding-top: 2rem;
 }
 .items {
-  background-color: #f88e84;
+  background-color: $secundario;
   width: 50%;
+  max-width: 80em;
   margin: 0 auto;
 }
 .titulo {
@@ -38,12 +41,12 @@
   font-size: calc(1.2rem * 4.8);
   text-align: center;
   margin-top: 4rem;
-  color: #f88e84;
-  font-family: "Smooch Sans", sans-serif;
+  color: $primario;
+  font-family: $mono;
 }
 .btnCopy {
   color: whitesmoke;
-  background-color: #f88e84;
+  background-color: $acento;
   border: 0;
   font-weight: 500;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -53,7 +56,7 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 5px 12px;
 }
 .btnCopy:hover {
-  background-color: rgba(33, 65, 112, 0.9);
+  background-color: $acentoRed;
 }
 .btnCopy a {
   color: whitesmoke;
@@ -66,25 +69,26 @@
   text-decoration: none;
 }
 .btnCopy a:hover {
-  color: whitesmoke;
+  color: black;
 }
 .tituloItem {
-  font-family: "Noto Sans", sans-serif;
+  font-family: $mono;
   font-size: 2rem;
-  color: black;
+  color: $primario;
+  font-weight: 500;
   margin: 0;
 }
 .textoItem {
-  font-family: "Noto Sans", sans-serif;
+  font-family: $code;
   font-style: italic;
   font-size: 1.2rem;
-  color: rgba(33, 65, 112, 0.9);
+  color: $acento;
   font-weight: 700;
 }
 .row {
   padding-left: 0;
   padding-right: 0;
-  padding-top: 5rem;
+  padding-top: 0rem;
   justify-content: center;
   margin: 0 auto;
   text-align: center;
@@ -92,21 +96,19 @@
 }
 
 .btnRepos {
-  color: whitesmoke;
-  background-color: rgba(33, 65, 112, 0.9);
+  color: $acentoRed;
+  background-color: $acentoRed;
   border: 0;
-  font-weight: 500;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-radius: 6px;
   padding: 0.5rem;
   margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 5px 12px;
 }
 .btnRepos:hover {
-  background-color: #f88e84;
+  background-color: $acento;
 }
 .btnRepos a {
-  color: whitesmoke;
+  color: $acento;
   background-color: transparent;
   border: 0;
   font-weight: 500;
@@ -117,7 +119,7 @@
   font-size: 1.5rem;
 }
 .btnRepos a:hover {
-  color: whitesmoke;
+  color: $acentoRed;
 }
 .icon {
   font-size: 2rem;
@@ -126,23 +128,30 @@
   margin-top: -0.5rem;
 }
 .icons {
-  color: #f88e84;
+  color: $acento;
   width: 4rem;
   margin: 1rem;
   font-size: 4rem;
   transition-duration: 0.5s;
 }
 .icons:hover {
-  color: rgba(33, 65, 112, 0.9);
+  color: $acentoRed;
 }
 .badge {
-  color: rgba(33, 65, 112, 0.9);
-  background-color: rgba(245, 245, 245, 0.144);
-  height: auto;
+  color: $acentoRed;
+  background-color: $secundario;
+  height: 2rem;
+  font-size: 1.4rem;
   line-height: 0.8rem;
   margin-left: 0rem;
   font-family: "Smooch Sans", sans-serif;
   font-weight: 900;
+  max-width: 400px;
+  margin: 0 auto;
   box-shadow: rgba(98, 98, 98, 0.3) 0px 9px 38px,
     rgba(0, 0, 0, 0.22) 0px 5px 12px;
+}
+.skillsTitles {
+  color: $primario;
+  font-size: 2rem;
 }

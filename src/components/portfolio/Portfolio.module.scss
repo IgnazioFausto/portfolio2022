@@ -1,3 +1,5 @@
+@import '../../utils/colors.module.scss';
+@import '../../utils/fonts.module.scss';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Smooch+Sans:wght@500&display=swap');
 
 
@@ -7,7 +9,7 @@
   justify-content: center;
   margin: 0 auto;
   text-align: center;
-  background-color: rgba(33, 65, 112, 0.9);
+  background-color: $secundarioDark;
 
 }
 .titulo {
@@ -15,9 +17,9 @@
   position: relative;
   text-align: center;
   margin-top: 0rem;
-  color: #f88e84;
+  color: $primario;
   font-size: calc(1.2rem * 4.8);
-  font-family: "Smooch Sans", sans-serif;
+  font-family: $mono;
 }
 .texto {
   display: block;
@@ -27,21 +29,19 @@
   padding-top: 0rem;
   width: 50%;
   margin: 0 auto;
-  color: #000000da;
+  color: $acentoRed;
   font-weight: 400;
-  font-family: "Noto Sans", sans-serif;
+  font-family:$mono;
   text-indent: 3rem;
-}
-.img {
-  width: 300px;
-  margin-top: 6rem;
-  border-radius: 500px;
 }
 .row {
   padding-left: 0;
   padding-right: 0;
   padding-top: 5rem;
   justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin: 0 auto;
   text-align: center;
   width: 100%;
@@ -51,22 +51,35 @@
   background-color: whitesmoke;
   width: 500px;
   margin: 2rem auto;
-  border-left: 1px solid #f88e84;
+  border-left: 1px solid $primario;
 }
 .itemsLista {
   background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.199);
+  border: 1px solid $primario;
   border-right: 0;
   text-align: left;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 10px, rgba(0, 0, 0, 0.22) 0px 1px 1px;
 }
 .icons {
-  color: #f88e84;
+  color: $acento;
   width: 5rem;
   margin: 2.5rem;
   font-size: 5rem;
   transition-duration: 0.5s;
 }
 .icons:hover {
-  color: rgba(33, 65, 112, 0.9);
+  color: $acentoRed;
 }
+.titles {
+  font-family: $code;
+  color: white;
+}
+.tools {
+  max-width: 520px;
+  margin:2rem auto;
+}
+.deps {
+  max-width: 520px;
+  margin:2rem auto;
+}
+

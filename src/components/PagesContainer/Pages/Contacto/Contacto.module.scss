@@ -1,3 +1,5 @@
+@import '../../../../utils/colors.module.scss';
+@import '../../../../utils/fonts.module.scss';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Smooch+Sans:wght@500&display=swap');
 
 
@@ -8,7 +10,7 @@
   justify-content: center;
   margin: 0 auto;
   text-align: center;
-  background-color: rgba(33, 65, 112, 0.9);
+  background-color: $secundarioDark;
 
 }
 .titulo {
@@ -17,8 +19,8 @@
   font-size: calc(1.2rem * 4.8);
   text-align: center;
   margin-left: 0rem;
-  color: #f88e84;
-  font-family: 'Smooch Sans', sans-serif;
+  color: $primario;
+  font-family:$mono;
 }
 .texto {
   display: block;
@@ -28,9 +30,9 @@
   padding-top: 1rem;
   width: 100%;
   margin: 0 auto;
-  color: #000000da;
+  color: $acentoRed;
   font-weight: 500;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: $mono;
 }
 .row {
   padding-left: 0;
@@ -52,7 +54,7 @@
   padding-bottom: 2rem;
 }
 .gmail {
-  color: rgba(33, 65, 112, 0.9);
+  color: $primario;
   margin-right: 1rem;
 }
 
@@ -62,8 +64,8 @@
   display: inline-block;
 }
 
-.copy {
-  color: blue;
+/* .copy {
+  color: $acento;
   padding: 16px;
   display: flex;
   align-items: center;
@@ -73,19 +75,19 @@
   position: relative;
   top: 5px;
 }
-
+ */
 .text_copied {
   font-size: 24px;
   position: relative;
   padding: 16px;
   display: inline-block;
-  color: rgba(33, 65, 112, 0.9);
+  color: $acento;
   font-weight: 500;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .btnCopy {
-  color:whitesmoke;
-  background-color: #f88e84;
+  color:white;
+  background-color: $acentoRed;
   border: 0;
   font-weight: 500;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -94,7 +96,7 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 5px 12px;
 }
 .btnCopy:hover {
-  background-color: rgba(33, 65, 112, 0.9);
+  background-color: $acento;
 }
 .btnCopy a {
   color:whitesmoke;
@@ -107,5 +109,5 @@
   text-decoration: none;
 }
 .btnCopy a:hover {
-  color: whitesmoke;
+  color: $secundarioDark;
 }

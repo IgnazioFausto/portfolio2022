@@ -22,6 +22,7 @@ import {
   SiJson,
   SiReactrouter,
 } from "react-icons/si";
+import { TiTick, TiTime} from "react-icons/ti"
 
 function Nosotros() {
   return (
@@ -30,10 +31,10 @@ function Nosotros() {
       <div className={WorksCSS.contenedor}>
         <h3 className={WorksCSS.titulo}>Proyectos realizados</h3>
 
-        <Carousel variant="dark">
+        <Carousel variant="light">
           <Carousel.Item>
             <img className={WorksCSS.img} src={TeknoImg} alt="First slide" />
-            <Carousel.Caption>
+            <Carousel.Caption className={WorksCSS.items}>
               <h5 className={WorksCSS.tituloItem}>Teknotech</h5>
               <p className={WorksCSS.textoItem}>
                 Proyecto para empresa de salud
@@ -101,7 +102,7 @@ function Nosotros() {
                 rel="noreferrer"
               >
                 {" "}
-                Ver repositorios en
+                Ver repositorios
               </a>{" "}
               <SiGithub className={WorksCSS.icon} />
             </button>
@@ -110,14 +111,14 @@ function Nosotros() {
       </Container>
       <div className={WorksCSS.contenedorPequeño}>
         <Row className={WorksCSS.row}>
-          <h2>
-            Aprendido{" "}
-            <Badge className={WorksCSS.badge} pill bg="dark" text="dark">
-              {" "}
-              (en constante práctica y mejora){" "}
-            </Badge>
-          </h2>
           <Col>
+            <h2 className={WorksCSS.skillsTitles}>Aprendido <TiTick/> </h2>
+            <h2>
+              {" "}
+              <Badge className={WorksCSS.badge} pill bg="" text="">
+                (en constante práctica y mejora){" "}
+              </Badge>
+            </h2>
             <SiVisualstudiocode className={WorksCSS.icons} />
             <SiHtml5 className={WorksCSS.icons} />
             <SiCss3 className={WorksCSS.icons} />
@@ -134,7 +135,7 @@ function Nosotros() {
       </div>
       <div className={WorksCSS.contenedorPequeño}>
         <Row className={WorksCSS.row}>
-          <h2>Aprendiendo </h2>
+          <h2 className={WorksCSS.skillsTitles}>Aprendiendo <TiTime/> </h2>
           <Col>
             <SiNodedotjs className={WorksCSS.icons} />
             <SiNpm className={WorksCSS.icons} />

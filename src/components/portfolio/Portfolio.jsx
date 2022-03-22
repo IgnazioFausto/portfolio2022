@@ -23,9 +23,9 @@ function Portfolio() {
           </p>
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <h5>Herramientas usadas</h5>
+      <Row className={PortfolioCSS.row}>
+        <Col className={PortfolioCSS.tools}>
+          <h5 className={PortfolioCSS.titles}>Herramientas usadas</h5>
           <SiVisualstudiocode className={PortfolioCSS.icons} />
           <SiReact className={PortfolioCSS.icons} />
           <SiGit className={PortfolioCSS.icons} />
@@ -33,8 +33,8 @@ function Portfolio() {
           <SiBootstrap className={PortfolioCSS.icons} />
           <SiNodedotjs className={PortfolioCSS.icons} />
         </Col>
-        <Col>
-          <h5>Dependencias usadas</h5>
+        <Col className={PortfolioCSS.deps}>
+          <h5 className={PortfolioCSS.titles}>Dependencias usadas</h5>
           <ListGroup className={PortfolioCSS.grupoLista}>
             <ListGroup.Item className={PortfolioCSS.itemsLista}>
               {" "}
