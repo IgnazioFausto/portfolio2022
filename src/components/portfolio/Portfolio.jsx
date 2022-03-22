@@ -23,7 +23,7 @@ function Portfolio() {
           </p>
         </Col>
       </Row>
-      <Row className={PortfolioCSS.row}>
+      <div className={PortfolioCSS.rowToolsDeps}>
         <Col className={PortfolioCSS.tools}>
           <h5 className={PortfolioCSS.titles}>Herramientas usadas</h5>
           <SiVisualstudiocode className={PortfolioCSS.icons} />
@@ -64,7 +64,7 @@ function Portfolio() {
             </ListGroup.Item>
           </ListGroup>
         </Col>
-      </Row>
+      </div>
     </Container>
   );
 }

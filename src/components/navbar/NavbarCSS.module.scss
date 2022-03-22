@@ -1,13 +1,13 @@
-@import '../../utils/colors.module.scss';
-@import '../../utils/fonts.module.scss';
+@import "../../utils/colors.module.scss";
+@import "../../utils/fonts.module.scss";
 
 nav.navbar {
   width: 100%;
   height: 4rem;
-  margin: .5rem auto;
+  margin: 0.5rem auto;
   display: flex;
   position: fixed;
-  background-color: rgba(255, 255,255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   justify-content: space-around;
   z-index: 3;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 38px, rgba(0, 0, 0, 0.22) 0px 1px 1px;
@@ -60,9 +60,71 @@ a.activeLink:hover {
   color: $acentoRed;
   background-color: $secundario;
   height: auto;
-  line-height: .8rem;
-  margin-left: .8rem;
+  line-height: 0.8rem;
+  margin-left: 0.8rem;
   font-family: "Smooch Sans", sans-serif;
   font-weight: 900;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 9px 38px, rgba(0, 0, 0, 0.22) 0px 5px 12px;
+}
+
+.menuIcon {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  .menuIcon {
+    display: block;
+    cursor: pointer;
+    color: $acento;
+    font-size: 2rem;
+  }
+  .menuIconOpen {
+    display:none;
+  }
+  .grupoLista {
+    position: absolute;
+    display: none !important;
+    top:60px;
+    width: 0%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column !important;
+    align-items: center;
+    background-color: $secundarioDark;
+  }
+  .grupoListaOpen {
+    position: absolute;
+    display: flex !important;
+    top: 60px;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column !important;
+    align-items: center;
+    background-color: $secundarioDark;
+  }
+  .badge {
+    display: none !important;
+  }
+  nav.navbar {
+    width: 100%;
+    height: 4rem;
+    margin: 0.5rem auto;
+    display: flex;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.05);
+    justify-content: space-evenly;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 38px, rgba(0, 0, 0, 0.22) 0px 1px 1px;
+  }
+  .navLink {
+    margin: 2rem;
+  }
+  .activeLink {
+    font-size: 4rem;
+    font-family: "Smooch Sans", sans-serif;
+    font-weight: 500;
+    margin: 0 1.2rem;
+    color: $acentoRed;
+    text-decoration: none;
+  }
 }

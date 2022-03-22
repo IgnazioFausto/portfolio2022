@@ -41,7 +41,20 @@
   justify-content: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.rowToolsDeps {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 5rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   margin: 0 auto;
   text-align: center;
   width: 100%;
@@ -75,11 +88,12 @@
   color: white;
 }
 .tools {
-  max-width: 520px;
+  width: 100%;
+  max-width: 700px;
   margin:2rem auto;
 }
 .deps {
-  max-width: 520px;
+  max-width: 700px;
   margin:2rem auto;
 }
 
