@@ -1,7 +1,6 @@
-@import '../../utils/colors.module.scss';
-@import '../../utils/fonts.module.scss';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Smooch+Sans:wght@500&display=swap');
-
+@import "../../utils/colors.module.scss";
+@import "../../utils/fonts.module.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Smooch+Sans:wght@500&display=swap");
 
 .contenedor {
   height: auto;
@@ -10,16 +9,17 @@
   margin: 0 auto;
   text-align: center;
   background-color: $secundarioDark;
-
 }
 .titulo {
-  display: block;
+  display: flex;
+  flex-direction: row;
   position: relative;
+  font-size: clamp(3rem, 1rem + 10vw, 7rem);
   text-align: center;
-  margin-top: 0rem;
+  margin: 0 auto;
   color: $primario;
-  font-size: calc(1.2rem * 4.8);
   font-family: $mono;
+  justify-content: center;
 }
 .texto {
   display: block;
@@ -31,7 +31,7 @@
   margin: 0 auto;
   color: $acentoRed;
   font-weight: 400;
-  font-family:$mono;
+  font-family: $mono;
   text-indent: 3rem;
 }
 .row {
@@ -90,10 +90,70 @@
 .tools {
   width: 100%;
   max-width: 700px;
-  margin:2rem auto;
+  margin: 2rem auto;
 }
 .deps {
   max-width: 700px;
-  margin:2rem auto;
+  margin: 2rem auto;
 }
-
+@media screen and (max-width: 1023px) {
+  .rowToolsDeps {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .deps {
+    width: 100%;
+    min-width: 250px;
+    margin: 2rem auto;
+  }
+  .grupoLista {
+    background-color: whitesmoke;
+    width: 100%;
+    min-width: 250px;
+    margin: 2rem auto;
+    border-left: 1px solid $primario;
+  }
+  .icons {
+    color: $acento;
+    width: 4rem;
+    margin: 2rem;
+    font-size: 5rem;
+    transition-duration: 0.5s;
+  }
+  .texto {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: calc(1.2rem * 1.2);
+    text-align: justify;
+    padding-top: 0rem;
+    width: 80%;
+    margin: 1rem auto;
+    color: $acentoRed;
+    font-weight: 400;
+    font-family: $mono;
+    text-indent: 3rem;
+  }
+  .row {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}

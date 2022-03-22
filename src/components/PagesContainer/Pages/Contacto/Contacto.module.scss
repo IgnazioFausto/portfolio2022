@@ -1,6 +1,6 @@
-@import '../../../../utils/colors.module.scss';
-@import '../../../../utils/fonts.module.scss';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Smooch+Sans:wght@500&display=swap');
+@import "../../../../utils/colors.module.scss";
+@import "../../../../utils/fonts.module.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Smooch+Sans:wght@500&display=swap");
 
 
 .contenedor {
@@ -11,43 +11,47 @@
   margin: 0 auto;
   text-align: center;
   background-color: $secundarioDark;
-
 }
 .titulo {
   display: block;
   position: relative;
-  font-size: calc(1.2rem * 4.8);
+  font-size: clamp(3rem, 1rem + 10vw, 7rem);
   text-align: center;
-  margin-left: 0rem;
+  margin-top: 4rem;
   color: $primario;
-  font-family:$mono;
+  font-family: $mono;
 }
 .texto {
   display: block;
   position: relative;
-  font-size: calc(1.2rem * 1.2);
-  text-align: center;
-  padding-top: 1rem;
-  width: 100%;
+  font-size: clamp(10px, 25px, 40px);
+  text-align: justify;
+  padding-top: 0rem;
+  max-width: 24em;
+  width: 90%;
   margin: 0 auto;
   color: $acentoRed;
   font-weight: 500;
   font-family: $mono;
+  text-indent: 3rem;
+  min-width:12em ;
 }
 .row {
+  --bs-gutter-x: 0 !important;
   padding-left: 0;
   padding-right: 0;
   padding-top: 5rem;
   justify-content: center;
   margin: 0 auto;
   text-align: center;
+  width: 100%;
 }
 .ul {
   padding: 4rem;
   list-style: none;
   color: #000000da;
   font-weight: 500;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.5rem;
 }
 .ul li {
@@ -64,18 +68,6 @@
   display: inline-block;
 }
 
-/* .copy {
-  color: $acento;
-  padding: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  cursor: pointer;
-  position: relative;
-  top: 5px;
-}
- */
 .text_copied {
   font-size: 24px;
   position: relative;
@@ -86,28 +78,35 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .btnCopy {
-  color:white;
+  color: white;
   background-color: $acentoRed;
   border: 0;
   font-weight: 500;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-radius: 6px;
-  padding: .1rem .5rem;
+  padding: 0.1rem 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 5px 12px;
 }
 .btnCopy:hover {
   background-color: $acento;
 }
 .btnCopy a {
-  color:whitesmoke;
+  color: whitesmoke;
   background-color: transparent;
   border: 0;
   font-weight: 500;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-radius: 6px;
-  padding: .1rem .5rem;
+  padding: 0.1rem 0.5rem;
   text-decoration: none;
 }
 .btnCopy a:hover {
   color: $secundarioDark;
+}
+
+@media screen and (max-width:700px) {
+  .gmail {
+    display: block;
+    font-size:1.4rem;
+  }
 }

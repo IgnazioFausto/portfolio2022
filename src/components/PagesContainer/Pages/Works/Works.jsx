@@ -37,7 +37,7 @@ function Nosotros() {
             <Carousel.Caption className={WorksCSS.items}>
               <h5 className={WorksCSS.tituloItem}>Teknotech</h5>
               <p className={WorksCSS.textoItem}>
-                Proyecto para empresa de salud
+                Proyecto para empresa de salud.
               </p>
               <button className={WorksCSS.btnCopy}>
                 <a
@@ -68,7 +68,7 @@ function Nosotros() {
             <Carousel.Caption className={WorksCSS.items}>
               <h5 className={WorksCSS.tituloItem}>Mi Huertapp</h5>
               <p className={WorksCSS.textoItem}>
-                Proyecto E-commerce en React, con BBDD en Firebase.
+                Proyecto E-commerce en React.
               </p>
               <button className={WorksCSS.btnCopy}>
                 <a

@@ -4,20 +4,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Smooch+Sans:wght@500&display=swap');
 
 .titulo {
-  display: block;
+  display: flex;
+  flex-direction: row;
   position: relative;
-  font-size: calc(1.2rem * 4.8);
+  font-size: clamp(3rem, 1rem + 10vw, 7rem);
   text-align: center;
-  margin-left: 0rem;
-  margin-top: 0rem;
+  margin: 0 auto;
   color:$primario;
   font-family: $mono;
+  justify-content: center;
 }
 .texto {
   display: block;
   position: relative;
-  font-size: calc(1.2rem * 1.4);
-  text-align: justify;
+  font-size:clamp(10px, 25px, 40px);
+  text-align: start;
   padding-top: 0rem;
   max-width: 40em;
   width: 80%;
@@ -28,13 +29,16 @@
   text-indent: 3rem;
 }
 .img {
-  width: 300px;
+  width: 90%;
+  min-width: 100px;
+  max-width: 300px;
   margin-top: 2rem;
   margin-bottom: 2rem;
   border-radius: 500px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 .row {
+  --bs-gutter-x:0 !important;
   padding-left: 0;
   padding-right: 0;
   padding-top: 5rem;

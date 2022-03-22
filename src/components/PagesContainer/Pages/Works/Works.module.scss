@@ -1,5 +1,5 @@
-@import '../../../../utils/colors.module.scss';
-@import '../../../../utils/fonts.module.scss';
+@import "../../../../utils/colors.module.scss";
+@import "../../../../utils/fonts.module.scss";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Smooch+Sans:wght@500&display=swap");
 
 .contenedor {
@@ -9,7 +9,7 @@
   display: block;
   margin: 0 auto;
   padding-top: 1rem;
-  background-color:$secundarioDark;
+  background-color: $secundarioDark;
 }
 .contenedorPequeño {
   width: 100%;
@@ -20,8 +20,10 @@
   background-color: $secundarioDark;
 }
 .img {
-  width: 50%;
+  width: 60%;
+  opacity: 0.4;
   max-width: 80em;
+  min-width: 20em;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -30,15 +32,16 @@
   padding-top: 2rem;
 }
 .items {
-  background-color: $secundario;
+  background-color: transparent;
   width: 50%;
   max-width: 80em;
+  min-width: 20em;
   margin: 0 auto;
 }
 .titulo {
   display: block;
   position: relative;
-  font-size: calc(1.2rem * 4.8);
+  font-size: clamp(3rem, 1rem + 10vw, 7rem);
   text-align: center;
   margin-top: 4rem;
   color: $primario;
@@ -154,4 +157,55 @@
 .skillsTitles {
   color: $primario;
   font-size: 2rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .img {
+    opacity: 0.4;
+    width: 60%;
+    max-width: 80em;
+    min-width: 22em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+  .items {
+    background-color: transparent;
+    width: 40%;
+    height: 80%;
+    max-width: 80em;
+    min-width: 15em;
+    margin: 0 auto;
+  }
+  .contenedorPequeño {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 3%;
+    background-color: $secundarioDark;
+  }
+  .contenedor {
+    width: 100%;
+    min-width: 10em;
+    height: auto;
+    min-height: 50vh;
+    display: block;
+    margin: 0 auto;
+    padding-top: 1rem;
+    background-color: $secundarioDark;
+  }
+  .row {
+    --bs-gutter-x: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5rem;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
 }
