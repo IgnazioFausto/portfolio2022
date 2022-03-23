@@ -11,6 +11,23 @@ import {
 } from "react-icons/si";
 
 function Portfolio() {
+  var obj = [
+    {
+      "react": "^17.0.2",
+      "react-bootstrap": "^2.1.2",
+      "react-copy-to-clipboard": "^5.0.4",
+      "react-dom": "^17.0.2",
+      "react-icons": "^4.3.1",
+      "react-router-dom": "^6.2.1",
+      "react-scripts": "5.0.0",
+      "sass": "^1.49.9",
+      "web-vitals": "^2.1.4",
+    },
+  ];
+  obj = JSON.stringify(obj);
+  obj = obj.slice(2, -2);
+  obj = obj.split(",");
+
   return (
     <Container fluid className={PortfolioCSS.contenedor}>
       <Row className={PortfolioCSS.row}>
@@ -36,32 +53,11 @@ function Portfolio() {
         <Col className={PortfolioCSS.deps}>
           <h5 className={PortfolioCSS.titles}>Dependencias usadas</h5>
           <ListGroup className={PortfolioCSS.grupoLista}>
+            { obj.map((deps) =>
             <ListGroup.Item className={PortfolioCSS.itemsLista}>
-              {" "}
-              "bootstrap": "^5.1.3"
+              {deps}
             </ListGroup.Item>
-            <ListGroup.Item className={PortfolioCSS.itemsLista}>
-              {" "}
-              "react": "^17.0.2"
-            </ListGroup.Item>
-            <ListGroup.Item className={PortfolioCSS.itemsLista}>
-              "react-bootstrap": "^2.1.2"
-            </ListGroup.Item>
-            <ListGroup.Item className={PortfolioCSS.itemsLista}>
-              "react-copy-to-clipboard": "^5.0.4"
-            </ListGroup.Item>
-            <ListGroup.Item className={PortfolioCSS.itemsLista}>
-              "react-dom": "^17.0.2"
-            </ListGroup.Item>
-            <ListGroup.Item className={PortfolioCSS.itemsLista}>
-              "react-router-dom": "^6.2.1"
-            </ListGroup.Item>
-            <ListGroup.Item className={PortfolioCSS.itemsLista}>
-              "react-scripts": "5.0.0"
-            </ListGroup.Item>
-            <ListGroup.Item className={PortfolioCSS.itemsLista}>
-              "web-vitals": "^2.1.4"
-            </ListGroup.Item>
+            )}
           </ListGroup>
         </Col>
       </div>
