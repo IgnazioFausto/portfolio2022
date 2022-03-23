@@ -3,6 +3,7 @@ import WorksCSS from "./Works.module.scss";
 import { Carousel, Col, Container, Row, Badge } from "react-bootstrap";
 import TeknoImg from "../../../../img/gif teknotech.gif";
 import HuertitaImg from "../../../../img/Mi Huertapp.gif";
+import FocusImg from "../../../../img/focusapp.gif";
 import {
   SiVisualstudiocode,
   SiReact,
@@ -30,7 +31,6 @@ function Nosotros() {
       {" "}
       <div className={WorksCSS.contenedor}>
         <h3 className={WorksCSS.titulo}>Proyectos realizados</h3>
-
         <Carousel variant="light">
           <Carousel.Item>
             <img className={WorksCSS.img} src={TeknoImg} alt="First slide" />
@@ -60,10 +60,28 @@ function Nosotros() {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
+            <img className={WorksCSS.img} src={FocusImg} alt="Second slide" />
+            <Carousel.Caption className={WorksCSS.items}>
+              <h5 className={WorksCSS.tituloItem}>FocusApp</h5>
+              <p className={WorksCSS.textoItem}>
+                Desarrollada en React Native.
+              </p>
+              <button className={WorksCSS.btnCopy}>
+                <a
+                  href="https://snack.expo.dev/@ignaciodev/focustime"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Ver demo
+                </a>
+              </button>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
             <img
               className={WorksCSS.img}
               src={HuertitaImg}
-              alt="Second slide"
+              alt="Thrird slide"
             />
             <Carousel.Caption className={WorksCSS.items}>
               <h5 className={WorksCSS.tituloItem}>Mi Huertapp</h5>

@@ -54,7 +54,7 @@ function Portfolio() {
           <h5 className={PortfolioCSS.titles}>Dependencias usadas</h5>
           <ListGroup className={PortfolioCSS.grupoLista}>
             { obj.map((deps) =>
-            <ListGroup.Item className={PortfolioCSS.itemsLista}>
+            <ListGroup.Item key={deps} className={PortfolioCSS.itemsLista}>
               {deps}
             </ListGroup.Item>
             )}
