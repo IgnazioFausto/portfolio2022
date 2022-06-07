@@ -1,0 +1,17 @@
+@import url(../utils/colors.scss);
+@import url(../utils/fonts.scss);
+
+//buttons colors
+$buttons-font-family: paragraphs-font-family;
+$buttons-font-weight: paragraphs-font-weight;
+$buttons-color-primary: yellow;
+$buttons-color-secondary: liblue;
+
+//buttons sizes
+$buttons-size-small: 1.2rem;
+$buttons-size-medium: 1.5rem;
+$buttons-size-large: 2rem;
+
+//buttons borders
+$buttons-border-radius: 10px;
+$buttons-border-width: 2px;

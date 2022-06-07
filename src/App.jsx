@@ -1,12 +1,12 @@
 import React from "react";
-import "./App.module.css";
 import Footer from "./components/footer/Footer";
 import SobreMi from "./components/PagesContainer/Pages/SobreMi/SobreMi";
 import Works from "./components/PagesContainer/Pages/Works/Works";
 import Contacto from "./components/PagesContainer/Pages/Contacto/Contacto";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/navbar/NavBar";
-import Portfolio from "./components/portfolio/Portfolio"
+import Portfolio from "./components/portfolio/Portfolio";
+import '././sass/main.scss'
 
 function App() {
   return (
