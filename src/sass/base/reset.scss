@@ -1,7 +1,10 @@
+@use '../utils/colors.scss';
+
 * {
   margin: 0;
   padding: 0;
 }
 html {
     box-sizing: border-box;
+    background-color: colors.$dark;
   }

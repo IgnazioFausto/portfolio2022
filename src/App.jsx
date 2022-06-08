@@ -6,13 +6,13 @@ import Contacto from "./components/PagesContainer/Pages/Contacto/Contacto";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/navbar/NavBar";
 import Portfolio from "./components/portfolio/Portfolio";
-import '././sass/main.scss'
+import './sass/main.scss';
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <NavBar />
+        {/* <NavBar /> */}
         <Routes>
           <Route path="/sobremi" element={<SobreMi />} />
           <Route path="/works" element={<Works />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="*" element={<SobreMi />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );

@@ -1,29 +1,22 @@
 import React from "react";
-import SobreMiCSS from "./SobreMi.module.scss";
 import { Container, Row, Col } from "react-bootstrap";
-import imgPerfil from "../../../../img/nachoperfilcv.png";
-
+import imgPerfil from "../../../../img/nachoperfilcv.jpg";
 
 function Inicio() {
   return (
     <>
-      <Container className={SobreMiCSS.contenedor}>
-        <Row className={SobreMiCSS.row}>
-          <h3 className={SobreMiCSS.titulo}>Sobre mi</h3>
-          <Col>
-            <img src={imgPerfil} alt="account" className={SobreMiCSS.img} />
-            <p className={SobreMiCSS.texto}>
-              ¡Hola! Mi nombre es Ignacio Fernández, soy argentino y tengo 26
-              años. Actualmente estoy viviendo España. <br />
-              <b> Mi meta es convertirme en desarrollador FullStack.</b>
-            </p>
-          </Col>
-        </Row>
-      </Container>
+      <div className="contenedor">
+        <h3 className="title">Sobre mi</h3>
+      
+          <img src={imgPerfil} alt="account" className="img-profile" />
+          <p className="paragraph">
+            ¡Hola! Mi nombre es Ignacio Fernandez, soy argentino, tengo 26 años y soy estudiante de programacion. Actualmente estoy viviendo
+            España. Podes ver mi <a href="#">roadmap</a>, mis <a href="#">skills</a> o conocer un poco de mi <a href="#">mundo personal.</a>
+            <br/> <b> Mis metas son: convertirme en desarrollador FullStack</b> y, algun dia, poder dedicarme a enseniar dentro de este mundo.
+            <br/> Glad to meet you! </p>
+      </div>
     </>
   );
 }
 
 export default Inicio;
-
-
