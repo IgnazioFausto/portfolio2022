@@ -1,39 +1,33 @@
-import { Nav, Navbar, Badge } from "react-bootstrap";
-import NavbarCSS from "./NavbarCSS.module.css";
+import { Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    <Navbar className={NavbarCSS.navbar}>
-      <NavLink to="/inicio" className={NavbarCSS.brand}>
-        Ignacio Dev
-      </NavLink>
+    <Navbar className='navbar'>
       <Nav>
         <NavLink
           to="/inicio"
-          className={(navData) => navData.isActive ? NavbarCSS.activeLink : NavbarCSS.navLink }>
-          Inicio
+          className={(navData) =>
+            navData.isActive ? 'active-link' : 'non-active-link'
+          }
+        >
+          Home
         </NavLink>
         <NavLink
           to="/works"
-          className={(navData) => navData.isActive ? NavbarCSS.activeLink : NavbarCSS.navLink }>
+          className={(navData) =>
+            navData.isActive ? 'active-link' : 'non-active-link'
+          }
+        >
           Trabajos/Proyectos
         </NavLink>
         <NavLink
           to="/contacto"
           className={(navData) =>
-            navData.isActive ? NavbarCSS.activeLink : NavbarCSS.navLink
+            navData.isActive ? 'active-link' : 'non-active-link'
           }
         >
           Contacto
-        </NavLink>
-        <NavLink
-          to="/portfolio"
-          className={(navData) =>
-            navData.isActive ? NavbarCSS.activeLink : NavbarCSS.navLink
-          }
-        >
-          Este portfolio  <Badge className={NavbarCSS.badge} pill bg="" text="">  (en desarrollo) </Badge>
         </NavLink>
       </Nav>
     </Navbar>
