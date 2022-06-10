@@ -1,17 +1,30 @@
-@import url(../utils/colors.scss);
-@import url(../utils/fonts.scss);
+@use '../utils/colors.scss';
+@use '../utils/fonts.scss';
 
-//buttons colors
-$buttons-font-family: paragraphs-font-family;
-$buttons-font-weight: paragraphs-font-weight;
-$buttons-color-primary: yellow;
-$buttons-color-secondary: liblue;
 
-//buttons sizes
-$buttons-size-small: 1.2rem;
-$buttons-size-medium: 1.5rem;
-$buttons-size-large: 2rem;
 
-//buttons borders
-$buttons-border-radius: 10px;
-$buttons-border-width: 2px;
+.button {
+    font-family: fonts.$titles-font-family;
+    font-weight: fonts.$medium-font-weight;
+    background-color: colors.$liblue;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(175, 10, 10, 0.75);
+    &:hover {
+        background-color: colors.$dark;
+        box-shadow: 5px 5px 5px rgba(175, 10, 10, 0);
+
+    }
+}
+.button a {
+    color: colors.$white;
+    font-weight: fonts.$titles-font-weight;
+    text-decoration: none;
+    &:hover {
+        color: colors.$liblue;
+    }
+
+}
