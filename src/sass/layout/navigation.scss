@@ -7,10 +7,34 @@ $nav-height: 50px;
 .navbar {
     width: $nav-width;
     height: $nav-height;
-    background-color: transparent;
+    background-color: colors.$dark;
     border: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center!important;
+}
+.navigation {
+    background-color: colors.$dark;
+    display: flex;
+    justify-self:center;
+    flex-direction: row;
+    align-items: center;
+    font-weight: fonts.$medium-font-weight;
+    font-size: 1.2rem;
+    font-family: fonts.$titles-font-family;
+}
+.navigation a {
+    color: colors.$white;
+    text-decoration: none;
+    padding: 10px;
+}
+.navigation a:hover {
+    color: colors.$red;
+}
+.navigation .active-link {
+    color: colors.$yellow;
+}
+.navigation .non-active-link {
+    color: colors.$white;
 }

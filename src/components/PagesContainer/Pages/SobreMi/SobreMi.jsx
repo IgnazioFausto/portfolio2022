@@ -12,9 +12,9 @@ function Inicio() {
           soy estudiante de programacion. Actualmente estoy viviendo España.
           Podes ver mi <a href="#">roadmap</a>, mis <a href="#">skills</a> o
           conocer un poco de mi <a href="#">mundo personal.</a>
-          <br /> <b>
+          <br />
             {" "}
-            Mis metas son: convertirme en desarrollador FullStack
+            Mis metas son:  <b> convertirme en desarrollador FullStack
           </b>{" "}
           y, algun dia, poder dedicarme a enseniar dentro de este mundo.
           <br /> Glad to meet you!

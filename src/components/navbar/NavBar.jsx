@@ -1,17 +1,17 @@
-import { Nav, Navbar } from "react-bootstrap";
+
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    <Navbar className='navbar'>
-      <Nav>
+    <div className='navbar'>
+      <div className='navigation'>
         <NavLink
           to="/inicio"
           className={(navData) =>
             navData.isActive ? 'active-link' : 'non-active-link'
           }
         >
-          Home
+          Sobre mi
         </NavLink>
         <NavLink
           to="/works"
@@ -29,8 +29,8 @@ function NavBar() {
         >
           Contacto
         </NavLink>
-      </Nav>
-    </Navbar>
+      </div>
+    </div>
   );
 }
 
