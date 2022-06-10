@@ -23,6 +23,12 @@ $nav-height: 50px;
     font-weight: fonts.$medium-font-weight;
     font-size: 1.2rem;
     font-family: fonts.$titles-font-family;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        line-height: 10px;
+    }
 }
 .navigation a {
     color: colors.$white;

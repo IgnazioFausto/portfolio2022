@@ -12,3 +12,17 @@
     border: 0;
     padding-bottom: 4rem;
 }
+.contenedor-botones {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: colors.$dark;
+    border: 0;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;    
+    }
+}
