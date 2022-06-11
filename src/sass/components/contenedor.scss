@@ -26,3 +26,33 @@
         flex-direction: column;    
     }
 }
+.contenedor-iconos {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: colors.$dark;
+    border: 0;
+    @media screen and (max-width: 425px) {
+        flex-direction: column;    
+    }
+}
+.icono {
+    font-size: 4rem;
+    color: colors.$yellow;
+    margin: .5rem;
+    transition: ease-in-out;
+    transition-duration: .5s;
+    &:hover {
+        color: colors.$liblue;
+        transform: rotate3d(0,0,1,360deg) scale(1.5);
+    }
+}
+.map {
+    background-color: aliceblue;
+    color: aliceblue;
+    width: 100%;
+}

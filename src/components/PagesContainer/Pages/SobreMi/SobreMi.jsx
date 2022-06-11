@@ -10,7 +10,7 @@ function Inicio() {
         <p className="paragraph">
           ¡Hola! Mi nombre es Ignacio Fernandez, soy argentino, tengo 26 años y
           soy estudiante de programacion. Actualmente estoy viviendo España.
-          Podes ver mi <a href="#">roadmap</a>, mis <a href="#">skills</a> o
+          Podes ver mi <a href="/roadmap">roadmap</a>, mis <a href="/skills">skills</a> o
           conocer un poco de mi <a href="#">mundo personal.</a>
           <br />
             {" "}
