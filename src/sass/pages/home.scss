@@ -39,8 +39,24 @@ p {
     margin: 2rem auto;
     border-radius: profile-img.$img-border-radius;
     border: solid;
-    border-radius: profile-img.$img-border-radius;
-    border-color: colors.$liblue;
+    animation: img 10s infinite ease-in-out;
+    @keyframes img {
+        0% {
+            border-color: colors.$liblue;
+        }
+        25% {
+            border-color: colors.$yellow;
+        }
+        50% {
+            border-color: colors.$red;
+        }
+        75% {
+            border-color: colors.$white;
+        }
+        100% {
+            border-color: colors.$liblue;
+        }
+    
 }
 .paragraph a {
     color: colors.$liblue;
@@ -50,4 +66,4 @@ p {
         color: colors.$red;
         text-decoration: underline;
     }
-}
+}}

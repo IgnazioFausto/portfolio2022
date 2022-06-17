@@ -9,7 +9,7 @@ function Roadmap() {
           <div className="flecha"></div>
           <div className="flecha"></div>
           <div className="flecha"></div>
-          <p className="skill">CSS</p>
+          <p className="skill">CSS</p>  
           <div className="flecha"></div>
           <div className="flecha"></div>
           <div className="flecha"></div>
