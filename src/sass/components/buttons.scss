@@ -1,38 +1,78 @@
-@use '../utils/colors.scss';
-@use '../utils/fonts.scss';
+@use "../utils/colors.scss";
+@use "../utils/fonts.scss";
 
 .button {
-    font-family: fonts.$titles-font-family;
-    font-weight: fonts.$medium-font-weight;
-    background-color: colors.$liblue;
-    border-radius: 5px;
-    margin: 1rem auto;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
-    box-shadow: 5px 5px 5px rgba(175, 10, 10, 0.75);
-    &:hover {
-        background-color: colors.$dark;
-        box-shadow: 5px 5px 5px rgba(175, 10, 10, 0);
+  font-family: fonts.$titles-font-family;
+  font-weight: fonts.$medium-font-weight;
+  background-color: colors.$liblue;
+  border-radius: 5px;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 5px 5px 5px rgba(175, 10, 10, 0.75);
+  animation: parpadeos 2s infinite;
+  @keyframes parpadeos {
+    0% {
+      box-shadow: 5px 5px 5px rgba(175, 10, 10, 0);
     }
+    50% {
+      box-shadow: 5px 5px 5px rgba(175, 10, 10, 0.75);
+    }
+    100% {
+      box-shadow: 5px 5px 5px rgba(175, 10, 10, 0);
+    }
+  }
+  &:hover {
+    background-color: colors.$dark;
+    box-shadow: 5px 5px 5px rgba(175, 10, 10, 0);
+  }
 }
 .button a {
-    color: colors.$white;
-    font-weight: fonts.$titles-font-weight;
-    text-decoration: none;
-    &:hover {
-        color: colors.$liblue;
-    }
+  color: colors.$white;
+  font-weight: fonts.$titles-font-weight;
+  text-decoration: none;
+  &:hover {
+    color: colors.$liblue;
+  }
 }
 .skill {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem auto;
-    padding: 0.5rem 1rem;
-    background-color: colors.$liblue;
-    font-size: 1.5rem;  
-    font-weight: fonts.$medium-font-weight;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: colors.$liblue;
+  font-size: 1.5rem;
+  font-weight: fonts.$medium-font-weight;
+}
+.flecha {
+  background-color: colors.$yellow;
+  width: 5px;
+  height: 5px;
+  display: flex;
+  margin: 0 5px;
+  margin-top: 12px;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  border-radius: 50%;
+  animation: parpadeo 2s infinite ease-in-out;
+  @keyframes parpadeo {
+    0% {
+      opacity: 0.9;
+      transform: scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+      background-color: colors.$red;
+    }
+    100% {
+      opacity: 0.9;
+      transform: scale(0.8);
+    }
+  }
 }
