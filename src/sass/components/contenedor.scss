@@ -51,19 +51,43 @@
         transform: rotate3d(0,0,1,360deg) scale(1.5);
     }
 }
+.icono-lista {
+    font-size: 2rem;
+    color: colors.$yellow;
+    margin: .5rem;
+    transition: ease-in-out;
+    transition-duration: .5s;
+    animation: iconolista 5s infinite ease-in-out;
+    @keyframes iconolista {
+        0% {
+            color: colors.$liblue;
+        }
+        50% {
+            color: colors.$yellow;
+        }
+        100% {
+            color: colors.$liblue;
+        }}
+}
 .map {
     background-color: colors.$dark;
     color: colors.$white;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    @media screen and (max-width: 990px) {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+}
+.colab {
+    margin-top: 2rem;
+    background-color: colors.$dark;
+    color: colors.$white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    text-align: start;
+    justify-content: center;
+    flex-wrap: wrap;
 }
