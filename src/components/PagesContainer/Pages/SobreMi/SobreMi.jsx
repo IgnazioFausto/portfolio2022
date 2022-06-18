@@ -1,5 +1,6 @@
 import React from "react";
 import imgPerfil from "../../../../img/nachoperfilcv.jpg";
+import {NavLink} from "react-router-dom";
 
 function Inicio() {
   return (
@@ -10,8 +11,8 @@ function Inicio() {
         <p className="paragraph">
           ¡Hola! Mi nombre es Ignacio Fernandez, soy argentino, tengo 26 años y
           soy estudiante de programacion. Actualmente estoy viviendo España.
-          Podes ver mi <a href="/roadmap">roadmap</a>, mis <a href="/skills">skills</a> o
-          conocer un poco de mi <a href="#">mundo personal.</a>
+          Podes ver mi <NavLink to='/roadmap'>roadmap</NavLink>, mis <NavLink to="/skills">skills</NavLink> o
+          conocer un poco de mi <a href="/">mundo personal.</a>
           <br />
             {" "}
             Mis metas son:  <b> convertirme en desarrollador FullStack
