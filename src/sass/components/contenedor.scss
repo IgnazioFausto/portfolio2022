@@ -40,6 +40,39 @@
         flex-direction: column;    
     }
 }
+.contenedor-works {
+    width: 80%;
+    max-width: 800px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    animation: caja-works 15s infinite ease-in-out;
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;    
+    }
+    @keyframes caja-works {
+        0% {
+            border-color: colors.$white;
+        }
+        25% {
+            border-color: colors.$liblue;
+        }
+        50% {
+            border-color: colors.$red;
+        }
+        75% {
+            border-color: colors.$yellow;
+        }
+        100% {
+            border-color: colors.$white;
+        }
+    }
+}
 .icono {
     font-size: 4rem;
     color: colors.$yellow;

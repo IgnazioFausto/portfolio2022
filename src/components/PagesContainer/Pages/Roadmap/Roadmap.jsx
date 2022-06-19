@@ -46,7 +46,6 @@ function Roadmap() {
           <div className="flecha"></div>
           <div className="flecha"></div>
           <div className="flecha"></div>
-          <div className="flecha"></div>
         </div>
       </div>
       <div className="contenedor">
@@ -77,7 +76,15 @@ function Roadmap() {
           </p>
           <p className="li-element">
             <BiTask className="icono-lista" />
-            Integracion con APIS
+            Diseno de componentes reutilizables en React
+          </p>
+          <p className="li-element">
+            <BiTask className="icono-lista" />
+            Manejo de paquetes de Node.js
+          </p>
+          <p className="li-element">
+            <BiTask className="icono-lista" />
+            Integracion de APIS
           </p>
           <p className="li-element">
             <BiTask className="icono-lista" />

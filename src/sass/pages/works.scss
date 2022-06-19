@@ -1,12 +1,31 @@
-@import url('../utils/colors.scss');
-@import url('../utils/fonts.scss');
+@use '../utils/colors.scss';
+@use '../utils/fonts.scss';
 
-$contact-bg-color: dark;
 
 
 .work-img {
-    width: 250px;
-    height: 250px;
+    width: clamp(70%, 50%, 80%);
+    height: clamp(70%, 50%, 80%);
     margin: 5%;
     border-radius: 5px;
+}
+.title-work {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: fonts.$titles-font-family;
+    font-weight: fonts.$titles-font-weight;
+    color: colors.$white;
+}
+.paragraph-work {
+    text-align: justify;
+    font-size: 1.2rem;
+    font-family: fonts.$paragraphs-font-family;
+    font-weight: fonts.$paragraphs-font-weight;
+    color: colors.$white;
+    width: 50%;
+    max-width: 400px;
+    min-width: 200px;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
 }
