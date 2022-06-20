@@ -5,7 +5,7 @@ function Roadmap() {
     <div className="contenedor">
       <h3 className="title">Roadmap</h3>
       <p className="paragraph"
-      >Conoce mi mapa de aprendizaje hasta ahora.</p>
+      >Conocé mi mapa de aprendizaje hasta ahora.</p>
       <div className="contenedor-map">
         <div className="map">
           <p className="skill">HTML</p>
@@ -49,9 +49,9 @@ function Roadmap() {
         </div>
       </div>
       <div className="contenedor">
-        <p className="title">Que se hacer?</p>
+        <p className="title">¿Qué puedo hacer?</p>
         <div className="flecha"></div>
-        <p className="paragraph">En que puedo colaborar:</p>
+        <p className="paragraph">En qué puedo colaborar:</p>
         <div className="flecha"></div>
         <div className="colab">
           <p className="li-element">
@@ -60,7 +60,7 @@ function Roadmap() {
           </p>
           <p className="li-element">
             <BiTask className="icono-lista" />
-            Revision de SEO
+            Revisión de SEO
           </p>
           <p className="li-element">
             <BiTask className="icono-lista" />
@@ -68,7 +68,7 @@ function Roadmap() {
           </p>
           <p className="li-element">
             <BiTask className="icono-lista" />
-            Disenio responsive
+            Diseño responsive
           </p>
           <p className="li-element">
             <BiTask className="icono-lista" />
@@ -76,7 +76,7 @@ function Roadmap() {
           </p>
           <p className="li-element">
             <BiTask className="icono-lista" />
-            Diseno de componentes reutilizables en React
+            Diseño de componentes reutilizables (React)
           </p>
           <p className="li-element">
             <BiTask className="icono-lista" />
@@ -84,7 +84,7 @@ function Roadmap() {
           </p>
           <p className="li-element">
             <BiTask className="icono-lista" />
-            Integracion de APIS
+            Integración de APIS
           </p>
           <p className="li-element">
             <BiTask className="icono-lista" />

@@ -27,7 +27,7 @@ function Nosotros() {
     <>
       {" "}
       <div className="contenedor">
-        <h3 className="title">Tecnologias que manejo</h3>
+        <h3 className="title">Tecnologías que manejo</h3>
         <p className="paragraph">Dominadas</p>
         <div className="contenedor-iconos">
           <SiVisualstudiocode className="icono" />

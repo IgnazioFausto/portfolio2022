@@ -1,6 +1,6 @@
 import React from "react";
 import imgPerfil from "../../../../img/nachoperfilcv.jpg";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Inicio() {
   return (
@@ -10,14 +10,15 @@ function Inicio() {
         <img src={imgPerfil} alt="account" className="img-profile" />
         <p className="paragraph">
           ¡Hola! Mi nombre es Ignacio Fernandez, soy argentino, tengo 26 años y
-          soy estudiante de programacion. Actualmente estoy viviendo España.
-          Podes ver mi <NavLink to='/roadmap'>roadmap</NavLink>, mis <NavLink to="/skills">skills</NavLink> o
-          conocer un poco de mi <a href="/">mundo personal.</a>
-          <br />
+          soy estudiante de programación. Actualmente estoy viviendo España.
+          Podés ver mi <NavLink to="/roadmap">roadmap</NavLink>, mis{" "}
+          <NavLink to="/skills">skills</NavLink> o conocer un poco de mi{" "}
+          <a href="/">mundo personal.</a>
+          <br /> Mis metas son: <b>
             {" "}
-            Mis metas son:  <b> convertirme en desarrollador FullStack
+            convertirme en desarrollador FullStack
           </b>{" "}
-          y, algun dia, poder dedicarme a enseniar dentro de este mundo.
+          y, algún día, poder dedicarme a enseñar dentro de este mundo.
           <br /> Glad to meet you!
         </p>
       </div>

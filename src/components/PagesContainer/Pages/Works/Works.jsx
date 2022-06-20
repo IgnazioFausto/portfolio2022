@@ -12,18 +12,14 @@ function Works() {
           <img src={work_huertita} className="work-img" />
           <p className="paragraph-work">
           <p className="title-work">Mi Huertapp</p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            dolorem dolor unde eos assumenda dignissimos, maxime suscipit
-            placeat dolores consequatur. Quisquam, quisquam.
+            E-commerce realizado con React, SASS, Firebase y Bootstrap 5.0. Deployado en Vercel.
           </p>
         </div>
         <div className="contenedor-works">
           <img src={work_tekno} className="work-img" />
-          <p className="paragraph-work">
+          <p className="paragraph-work">  
           <p className="title-work">Web empresarial</p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-            dolorem dolor unde eos assumenda dignissimos, maxime suscipit
-            placeat dolores consequatur. Quisquam, quisquam.
+            Sitio web desarrollado en equipo conformado por: Product Manager, UX/UI Designer y otros desarrolladores. 
           </p>
         </div>
       </div>
