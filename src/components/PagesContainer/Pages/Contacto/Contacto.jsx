@@ -1,3 +1,6 @@
+import { SiLinkedin, SiGit, SiFacebook, SiGmail, SiSololearn } from "react-icons/si";
+
+
 function Contacto() {
   return (
     <>
@@ -8,21 +11,18 @@ function Contacto() {
           <b>espero tu mensaje.</b>
         </p>
         <div className="contenedor-botones">
-          <div className="button">
-            <a href="#">LinkedIn</a>
-          </div>
-          <div className="button">
-            <a href="#">Github</a>
-          </div>
-          <div className="button">
-            <a href="#">Facebook</a>
-          </div>
-          <div className="button">
-            <a href="#">SoloLearn</a>
-          </div>
-          <div className="button">
-            <a href="#">Gmail</a>
-          </div>
+          
+          <a href="#" className="button-rrss"><SiLinkedin/></a>
+          <a href="#" className="button-rrss"><SiGit/> </a>
+          <a href="#" className="button-rrss"><SiFacebook/> </a>
+          <a href="#" className="button-rrss"><SiGmail/> </a>
+          <a href="#" className="button-rrss"><SiSololearn/> </a>
+          
+        </div>
+      </div>
+      <div className="contenedor">
+        <div className="button">
+          <a href="public/CV-Junio-22-Ignacio-Fernandez.pdf" download='CV Junio 22 Ignacio Fernandez' >Descarga mi CV</a>
         </div>
       </div>
     </>
