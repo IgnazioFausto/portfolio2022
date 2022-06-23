@@ -83,9 +83,9 @@
   margin: auto 2rem;
   cursor: pointer;
   color: colors.$liblue;
-  transition: .8s;
+  transition: 0.7s;
   &:hover {
     color: colors.$yellow;
-    transform: rotate(360deg) scale(.9);
+    transform: rotate3d(0, 0, 1, 360deg) scale(1.1);
   }
 }

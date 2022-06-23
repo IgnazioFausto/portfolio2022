@@ -1,4 +1,5 @@
-import { SiLinkedin, SiGit, SiFacebook, SiGmail, SiSololearn } from "react-icons/si";
+import { SiLinkedin, SiGithub, SiFacebook, SiGmail, SiSololearn } from "react-icons/si";
+import { FaDownload } from "react-icons/fa"
 
 
 function Contacto() {
@@ -12,17 +13,16 @@ function Contacto() {
         </p>
         <div className="contenedor-botones">
           
-          <a href="#" className="button-rrss"><SiLinkedin/></a>
-          <a href="#" className="button-rrss"><SiGit/> </a>
-          <a href="#" className="button-rrss"><SiFacebook/> </a>
-          <a href="#" className="button-rrss"><SiGmail/> </a>
-          <a href="#" className="button-rrss"><SiSololearn/> </a>
+          <a href="https://www.linkedin.com/in/ignaziofernandez/" target="_blank" className="button-rrss"><SiLinkedin/></a>
+          <a href="https://github.com/IgnazioFausto" target="_blank" className="button-rrss"><SiGithub/></a>
+          <a href="https://www.facebook.com/nacho.whitekross" target="_blank" className="button-rrss"><SiFacebook/></a>
+          <a href="https://www.sololearn.com/profile/24508378" target="_blank" className="button-rrss"><SiSololearn/></a>
           
         </div>
       </div>
       <div className="contenedor">
         <div className="button">
-          <a href="public/CV-Junio-22-Ignacio-Fernandez.pdf" download='CV Junio 22 Ignacio Fernandez' >Descarga mi CV</a>
+          <a href="public/CV-Junio-22-Ignacio-Fernandez.pdf" download='CV Junio 22 Ignacio Fernandez.pdf'>Descarga mi CV <FaDownload/></a>
         </div>
       </div>
     </>
