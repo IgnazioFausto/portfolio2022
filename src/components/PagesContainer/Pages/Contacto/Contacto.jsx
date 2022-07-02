@@ -12,12 +12,10 @@ function Contacto() {
           <b>espero tu mensaje.</b>
         </p>
         <div className="contenedor-botones">
-          
           <a href="https://www.linkedin.com/in/ignaziofernandez/" target="_blank" className="button-rrss"><SiLinkedin/></a>
           <a href="https://github.com/IgnazioFausto" target="_blank" className="button-rrss"><SiGithub/></a>
           <a href="https://www.facebook.com/nacho.whitekross" target="_blank" className="button-rrss"><SiFacebook/></a>
           <a href="https://www.sololearn.com/profile/24508378" target="_blank" className="button-rrss"><SiSololearn/></a>
-          
         </div>
       </div>
       <div className="contenedor">
