@@ -20,7 +20,7 @@ function Contacto() {
       </div>
       <div className="contenedor">
         <div className="button">
-          <a href="public/CV-Junio-22-Ignacio-Fernandez.pdf" download='CV Junio 22 Ignacio Fernandez.pdf'>Descarga mi CV <FaDownload/></a>
+          <a href="./public/CV-Junio-22-Ignacio-Fernandez.pdf" download='CV Junio 22 Ignacio Fernandez.pdf'>Descarga mi CV <FaDownload/></a>
         </div>
       </div>
     </>
