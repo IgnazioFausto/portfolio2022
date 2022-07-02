@@ -1,5 +1,6 @@
 import { SiLinkedin, SiGithub, SiFacebook, SiGmail, SiSololearn } from "react-icons/si";
-import { FaDownload } from "react-icons/fa"
+import { FaDownload } from "react-icons/fa";
+import { CV } from '../../../../../public/CV Junio 22 Ignacio Fernandez.pdf'
 
 
 function Contacto() {
@@ -20,7 +21,7 @@ function Contacto() {
       </div>
       <div className="contenedor">
         <div className="button">
-          <a download href="public/CV-Junio-22-Ignacio-Fernandez.pdf">Descarga mi CV <FaDownload/></a>
+          <a download href={CV}>Descarga mi CV <FaDownload/></a>
         </div>
       </div>
     </>
