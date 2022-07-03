@@ -8,7 +8,7 @@ function Contacto() {
       <div className="contenedor">
         <h3 className="title">¡Contáctame!</h3>
         <p className="paragraph">
-          A través de mis redes y medios de comunicación, <br />{" "}
+          A través de mis redes y medios de comunicación, <br />
           <b>espero tu mensaje.</b>
         </p>
         <div className="contenedor-botones">
