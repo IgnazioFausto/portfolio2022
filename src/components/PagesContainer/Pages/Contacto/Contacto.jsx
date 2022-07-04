@@ -20,7 +20,7 @@ function Contacto() {
       </div>
       <div className="contenedor">
         <div className="button">
-          <a target='_blank'  rel="noopener noreferrer" href="/CV Junio 22 Ignacio Fernandez.pdf" download>Descarga mi CV <FaDownload/></a>
+          <a target='_blank'  rel="noopener noreferrer" href="https://raw.githubusercontent.com/IgnazioFausto/portfolio2022/d93a90e47669c7427d8f0586e8cb4c69a862bf72/CV%20Junio%2022%20Ignacio%20Fernandez.pdf" download>Descarga mi CV <FaDownload/></a>
         </div>
       </div>
     </>
