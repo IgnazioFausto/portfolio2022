@@ -13,7 +13,8 @@ function Inicio() {
           soy estudiante de programación. Actualmente estoy viviendo España.
           Podés ver mi <NavLink to="/roadmap">roadmap</NavLink>, mis{" "}
           <NavLink to="/skills">skills</NavLink> o conocer un poco de mi{" "}
-          <a href="/">mundo personal.</a>
+          <NavLink to="/mimundo">mundo personal.</NavLink>
+          
           <br /> Mis metas son: <b>
             {" "}
             convertirme en desarrollador FullStack

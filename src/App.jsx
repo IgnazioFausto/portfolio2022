@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/navbar/NavBar";
 import "./sass/main.scss";
 import Works from "./components/PagesContainer/Pages/Works/Works";
+import World from "./components/PagesContainer/Pages/World/World";
 
 function App() {
   return (
@@ -15,13 +16,13 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/sobremi" element={<SobreMi />} />
-          <Route path='/roadmap' element={<Roadmap />} />
-          <Route path='/works' element={<Works />} />
+          <Route path="/roadmap" element={<Roadmap />} />
+          <Route path="/works" element={<Works />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/mimundo" element={<World />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="*" element={<SobreMi />} />
         </Routes>
-        
       </BrowserRouter>
     </>
   );
